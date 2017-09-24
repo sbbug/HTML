@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLBQ</title>
+<!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+  p{
+   font-weight:bolder;
+   color:lightblue;
+  }
+
+</style>
+</head>
+<body>
+	<h1>我们年轻的日子</h1>
+	<div class="main">
+	
+	    <div class="signin-form profile">
+			<h3> <span>MyGirl</span></h3>
+			</br></br>
+			<img src = "./images/one1.jpg"/>
+			</br></br>
+			<p>美吗？</p>
+		</div>	
+		
+		<div class="signin-form profile">
+			<h3> <span>MyGirl</span></h3>
+			</br></br>
+			<img src = "./images/YY.jpg"/>
+			</br></br>
+			<p>很美，我爱的女孩就是她！</p>
+		</div>	
+  
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/two.jpg"/>
+			</br></br>
+			<p>玄武湖见证我们第一次合影</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/one.jpg"/>
+			</br></br>
+			<p>这时的天很蓝，云很白，景很美</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/three.jpg"/>
+			</br></br>
+			<p>第一次吃到了你为我摘的草莓</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/four.jpg"/>
+			</br></br>
+			<p>很甜，很美</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/five.jpg"/>
+			</br></br>
+			<p>第一次为我过生日，很开心</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/nine.jpg"/>
+			</br></br>
+			<p>地铁上，你在看书，我在看你</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/six.png"/>
+			</br></br>
+			<p>我们幼稚吗？</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/seven.png"/>
+			</br></br>
+			<p>NO!</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/eight.jpg"/>
+			</br></br>
+			<p>第一次送你回家,有一点紧张</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/ten.jpg"/>
+			</br></br>
+			<p>数学不好，你骑车在图书馆门口绕了一个无穷大</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/HG.gif"/>
+			</br></br>
+			<p>摇摆，一起摇摆。</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>YY and HG</span></h3>
+			</br></br>
+			<img src = "./images/eleven.jpg"/>
+			</br></br>
+			<p>滴答滴答，就像我们的爱，从不会穷尽</p>
+		</div>
+		
+		<div class="signin-form profile">
+			<h3> <span>你若不离</br></br>我便不弃</span></h3>
+		</div>
+		<div class="signin-form profile">
+			<canvas id="canvas" width="200" height="200" style="background-color: "></canvas>
+			<p>良好的心态，踏实的努力，还有坚强的后盾，一直相信鼓励自己的人，感觉一切皆有可能啦。❤</p>
+			<script>
+
+//Create a canvas object(var canvas) from the HTML canvas
+//element
+var canvas = document.getElementById("canvas");
+
+//Create a 2d drawing object(var ctx)for the canvas object 
+var ctx = canvas.getContext("2d");
+
+//Calclate the clock radius,using the height of the canvas
+//Using the canvas height to calculate the clock radius,
+//makes the clock work for all canvas
+var radius = canvas.height/2;
+
+//Remap the(0,0)position(of the dwawing object)to the
+//the centre of canvas
+ctx.translate(radius,radius);
+
+//Reduce the clock radius(to 90%)to draw the well inside 
+//the canvas
+radius = radius * 0.90
+drawClock( );
+
+//Create a function to draw the clock
+function drawClock( ){
+ctx.arc(0,0,radius,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+}
+
+
+
+
+//制作ClockFace
+
+//Create a drawFace( ) function for drawing the clock face:
+function drawClock( ){
+	drawFace(ctx,radius);
+}
+/***错误：没有定义对象，而且没有把方法包括进来,放进中括号里面*******/
+function drawFace(ctx,radius){
+var grad;
+
+//Draw the white circle:
+ctx.beginPath( );
+ctx.arc(0,0,radius,0,2*Math.PI);
+ctx.fillStyle = 'white';
+ctx.fill( );
+
+//Create 3 color stops,corresponding with the inner,middle,and outer edge
+//of the arc:
+/******少定义grad对象***********/
+grad = ctx.createRadialGradient(0,0,radius*0.95,0,0,radius*1.05);
+grad.addColorStop(0,'#333');
+grad.addColorStop(0.5,'white');
+grad.addColorStop(1,'#333');
+
+//The color stops create a 3D effect.
+//第一次在html接触到3D效果
+
+//Define the gradient as the stroke style of the drawing  object:
+ctx.strokeStyle = grad;
+
+//Define the line width of drawing object(10% of radius):
+ctx.lineWidth = radius * 0.1;
+
+//Draw circle:
+ctx.stroke( );
+
+//Draw the clock center:
+ctx.beginPath( );
+ctx.arc(0,0,radius*0.1,0,2*Math.PI);
+ctx.fillStyle = '#333';
+ctx.fill( );
+
+
+	
+}
+
+
+
+//制作Clock Number
+function drawClock( ){
+drawFace(ctx,radius);
+drawNumbers(ctx,radius);
+}
+
+function drawNumbers(ctx,radius){
+var ang;
+var num;
+//Set the size(of drawing object) to 15% of the radius:
+ctx.font = radius*0.15 + "px arial";
+
+//Set the text alignment to the middle and the center of  the position:
+ctx.textBaseline = "middle";
+ctx.textAlign ="center";
+
+//Calculate the print position(for 12 numbers ) to 85% of the radius,
+//rotated(PI/6)for each number:
+for(num = 1;num <13;num++){
+	ang = num*Math.PI/6;
+	ctx.rotate(ang);
+	ctx.translate(0,-radius*0.85);
+	ctx.rotate(-ang);
+	ctx.fillText(num.toString( ),0,0);
+	ctx.rotate(ang);
+	ctx.translate(0,radius*0.85);
+	ctx.rotate(-ang);
+}
+
+}
+
+
+
+//制作 Clock Hands
+function drawClock( ){
+	drawFace(ctx,radius);
+	drawNumbers(ctx,radius);
+	drawTime(ctx,radius);
+}
+
+function drawTime(ctx,radius){
+//Use Dtae to get hour,minute,second:
+/******拼写错误，data********/
+var now = new Date( );
+var hour = now.getHours( );
+var minute = now.getMinutes( );
+var second = now.getSeconds( );
+//hour
+//Calculate the angle of the hour hand,and draw it a lwngth(50% of radius)，
+//and a width(7% of radius);
+hour = hour%12;
+hour=(hour*Math.PI/6)+(minute*Math.PI/(6*60))+(second*Math.PI/(360*60));
+drawHand(ctx,hour,radius*0.5,radius*0.07);
+//minute
+minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+drawHand(ctx,minute,radius*0.8,radius*0.07);
+//sceond
+second=(second*Math.PI/30);
+drawHand(ctx,second,radius*0.9,radius*0.02);
+}
+
+function drawHand(ctx,pos,length,width){
+/******拼写错误，begainPath********/
+	ctx.beginPath( );
+	ctx.lineWidth = width;
+	ctx.lineCap = "round";
+	ctx.moveTo(0,0);
+	/******漏写了三行******/
+	ctx.rotate(pos);
+	ctx.lineTo(0,-length);
+	ctx.stroke( );
+	ctx.rotate(-pos);
+}
+
+
+
+//制作启动
+/***错误：代码重复，会出现一个大概1/4的钟，外加一个静止的***/
+//call the drawClock function at intervals
+//var canvas = document.getElementById("canvas");
+//var ctx = canvas.getContext("2d");
+//var radius = canvas.height/2;
+//ctx.translate(radius,radius);
+//radius = radius *0.90
+//drawCLock( );
+setInterval(drawClock,1000);
+</script>
+		</div>
+		<div class="signin-form profile">
+              
+			<a href="./data/details.rar">details</a>
+		</div>	
+		<embed src = "YY.mp3" loop = "true" width = "0" height = "20" autostart = "true">		
+	</div>
+		
+</body>
+</html>
